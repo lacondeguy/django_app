@@ -3,7 +3,8 @@ from django.urls import path, include
 from news.views import *
 
 urlpatterns = [
-    path('', main),
     path('admin/', admin.site.urls),
-    path('news/', include('news.urls')),
+    path('', include('news.urls')),
 ]
+
+
