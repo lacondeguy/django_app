@@ -183,4 +183,4 @@ fabric.properties
 .idea
 /django_app/db.sqlite3
 /django_app/news/migrations/
-
+/django_app/media/photos/
