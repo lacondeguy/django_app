@@ -4,7 +4,8 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    path('', index),
+    path('', index, name='home'),
+    path('category/<int:category_id>/', get_category, name='category')
 ]
 
 if settings.DEBUG:
