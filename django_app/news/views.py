@@ -10,7 +10,7 @@ def index(request):
 
     context = {
         'news_example': news,
-        'title': 'Список новостей',
+        'title': 'Все новости',
         'categories': categories,
     }
     return render(request, template_name='news/index.html', context=context)
